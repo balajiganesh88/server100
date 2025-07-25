@@ -11,7 +11,7 @@ provider "aws" {
 resource "aws_vpc" "vpc200" {
     cidr_block = "172.17.0.0/16"
     tags =  {
-        Name = "vpc100"
+        Name = "vpc200"
     }
 }
 resource "aws_subnet" "publicsubnet1" {
