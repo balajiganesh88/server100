@@ -1,15 +1,11 @@
 terraform {
   required_providers {
     aws = {source = "hashicorp/aws"
-    version = "> 6.0"}
+    version = "~> 6.5"}
   }
 }
 provider "aws" {
     region = "us-east-1" 
-assume_role {
-    role_arn = "arn:aws:iam::043902877182:user/Balaji"
-  }
-    
 }
 
 resource "aws_vpc" "vpc200" {
