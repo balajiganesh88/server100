@@ -4,6 +4,9 @@ terraform {
     version = "> 6.0"}
   }
 }
+provider "aws" {
+    region = "us-east-1" 
+}
 
 resource "aws_vpc" "vpc200" {
     cidr_block = "172.17.0.0/16"
