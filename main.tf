@@ -42,3 +42,9 @@ resource "aws_subnet" "privatesubnet2" {
         Name = "privatesubnet2"
     }
 }
+resource "aws_internet_gateway" "IGW100" {
+    vpc_id = aws_vpc.vpc200.id
+    tags = {
+        Name = "IGW100"
+    }
+}
